@@ -22,12 +22,8 @@ define( 'CHURCHTHEMES_OPTIONS_LOGO_HEIGHT', 56 );
 define( 'CHURCHTHEMES_OPTIONS_LOGO_TOP_MARGIN', 50 );
 
 // Custom background
-define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_IMAGE',  WP_THEME_DIR . '/images/bg_body.jpg'  );
+define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_IMAGE',  WP_THEME_URL . '/images/bg_body.jpg'  );
 define( 'CHURCHTHEMES_DEFAULT_BACKGROUND_COLOR', '101519' );
 
 // Update script
-define( 'CHURCHTHEMES_UPDATE_API_URL', 'http://churchthemes.net/updates/urbancity/' );
-
-// PressTrends
-define( 'CHURCHTHEMES_PRESSTRENDS_API_KEY', '6wtwv56il5mirnyk1gaiox0swbp3ut612rof' );
-define( 'CHURCHTHEMES_PRESSTRENDS_THEME_AUTH', 'p0ezn81tdbtunr15lx89zrukrnzvg8jvh' );
+define( 'CHURCHTHEMES_UPDATE_API_URL', 'http://churchthemes.net/' );
