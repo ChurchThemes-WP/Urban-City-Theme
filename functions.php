@@ -25,47 +25,11 @@ if ( !defined( 'WP_THEME_URL' ) ) {
 	define( 'WP_THEME_URL', get_template_directory_uri() );
 }
 if ( !defined( 'WP_THEME_DIR' ) ) {
-	define( 'WP_THEME_DIR', get_template_directory_uri() );
+	define( 'WP_THEME_DIR', get_template_directory() );
 }
 
-require_once( TEMPLATEPATH . '/config.php' );
-
-// Set path to function libraries
-$admin_path     = TEMPLATEPATH . '/lib/admin/';
-$functions_path = TEMPLATEPATH . '/lib/functions/';
-$scripts_path   = TEMPLATEPATH . '/lib/scripts/';
-
-// Load each admin function
-require_once( $admin_path . 'theme-options.php' );     // Custom theme options
-require_once( $admin_path . 'custom-background.php' ); // Custom background support
-require_once( $admin_path . 'social-footer.php' );     // Social footer options
-require_once( $admin_path . 'update.php' );            // Check for theme updates
-require_once( $admin_path . 'dashboard.php' );         // Custom dashboard widgets
-require_once( $admin_path . 'metabox.php' );           // Custom meta box
-require_once( $admin_path . 'sidebars.php' );          // Custom sidebars
-require_once( $admin_path . 'post-settings.php' );     // Post settings
-require_once( $admin_path . 'slide-settings.php' );    // Slide settings
-require_once( $admin_path . 'podcast-settings.php' );  // Podcast settings
-require_once( $admin_path . 'sermon-settings.php' );   // Sermon settings
-require_once( $admin_path . 'location-settings.php' ); // Location settings
-require_once( $admin_path . 'person-settings.php' );   // Person settings
-require_once( $admin_path . 'reorder/reorder.php' );   // Reorder plugin
-
-// Load each function
-require_once( $functions_path . 'prefix-post-types.php' ); // Ensure that all post types are prefixed
-require_once( $functions_path . 'functions.php' );         // Specific theme functions
-require_once( $functions_path . 'search-excerpt.php' );    // Customize excerpt on searches
-require_once( $functions_path . 'post-types.php' );        // Custom post types
-require_once( $functions_path . 'widgets.php' );           // Custom theme widgets
-require_once( $functions_path . 'force-download.php' );    // Allow force downloads via query var
-require_once( $functions_path . 'presstrends.php' );       // PressTrends
-
-if ( !function_exists( 'entry_views_update' ) ) {
-	require_once( $functions_path . 'entry-views.php' ); // Entry views extension
-}
-
-// Load scripts
-require_once( $scripts_path . 'scheme.php' ); // Custom CSS scheme
+require_once( get_template_directory() . '/config.php' );
+require_once( get_template_directory() . '/lib/bootstrap.php' );
 
 /*---------------------------------------------------------------------------------------*/
 /* End ChurchThemes Functions - Thank you for your cooperation! :)                       */
