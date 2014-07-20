@@ -13,7 +13,7 @@ You have been warned! :)
 */
 
 // Current version of the theme
-define( 'CHURCHTHEMES_CURRENT_VERSION', '1.3.3' );
+define( 'CHURCHTHEMES_CURRENT_VERSION', '1.4' );
 
 // Theme options
 define( 'CHURCHTHEMES_OPTIONS_MAIN_COLOR', '#f08d24' );
